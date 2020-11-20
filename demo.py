@@ -12,6 +12,12 @@ Options:
 
 from docopt import docopt
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
-print(f"The value of <arg4> is: {opt['<arg4>']}")
+
+def main(opt):
+    print(opt)
+    print(type(opt))
+    print(f"The value of <arg4> is: {opt['<arg4>']}")
+
+
+if __name__ == "__main__":
+    main(opt)
